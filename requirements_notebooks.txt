@@ -1,0 +1,4 @@
+mp-api==0.41.2
+pybel==0.15.5
+rdkit
+openbabel
