@@ -389,11 +389,9 @@ class GraphModel:
             GraphModel
         """
         configs = loadfn(filename + ".json")
-        print(configs)
         from tensorflow.keras.models import load_model
 
         from megnet.layers import _CUSTOM_OBJECTS
-        print(_CUSTOM_OBJECTS.keys())
         model = load_model(filename, custom_objects=_CUSTOM_OBJECTS)
         configs.update({"model": model})
         return GraphModel(**configs)
