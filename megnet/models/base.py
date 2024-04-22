@@ -392,7 +392,6 @@ class GraphModel:
         from tensorflow.keras.models import load_model
 
         from megnet.layers import _CUSTOM_OBJECTS
-
         model = load_model(filename, custom_objects=_CUSTOM_OBJECTS)
         configs.update({"model": model})
         return GraphModel(**configs)

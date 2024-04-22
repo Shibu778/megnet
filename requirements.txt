@@ -1,4 +1,4 @@
-pymatgen==2021.2.13
+pymatgen==2024.4.13
 pandas==1.5.1
 tensorflow==2.8.4
 numpy==1.23.5
